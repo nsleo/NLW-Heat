@@ -20,14 +20,15 @@
                     <span>
                         <img src="images/build.svg" alt="selo rocketseat"/>
                     </span>
-                    <img src="http://lorempixel.com/160/185/people/" alt="foto pessoal"/>
+                    <img id="userAvatar" src="http://lorempixel.com/160/185/people/" alt="foto pessoal"/>
                 </div>
                 <h1 id="userName">Mayk Brito</h1>
-                <a target="_blank" href="https://github.com/maykbrito">
+                <a id="userLink" target="_blank" href="https://github.com/maykbrito">
                     <img src="images/github.svg" alt="icone github">    
-                maykbrito</a>
+                    <span id="userLogin"> maykbrito </span>
+                </a>
 
-                <p>An instructor focused on helping pople start programming for web</p>
+                <p id="userBio">An instructor focused on helping pople start programming for web</p>
 
                 <ul id="socialLinks">
                     <li class="youtube">
@@ -55,38 +56,8 @@
 
         </main>
     
-        <script>
-
-            const links = {
-                github: "nsleo",
-                youtube: "UC2koCdmW63DdxkCP6Kj6GcA",
-                instagram: "n.s.leo",
-                facebook: "nsleov",
-                twitter: "leotelho",
-            }
-
-            function changeSocialMediaLinks() {
-                for (let li of socialLinks.children) {
-                    const social = li.getAttribute('class')
-
-                    li.children[0].href = `https://${social}.com/${links[social]}`
-                    
-                    alert(li.children[0].href)
-                }
-            }
-
-            changeSocialMediaLinks()
-
-            //function changeSocialMediaLinks(){
-            //    document.getElementById("userName").textContent = "Leonardo Nunes"
-            //}
-
-            //function changeSocialMediaLinks() {
-            //    userName.textContent = 'Leonardo Nunes'
-            //}
-
-        </script>
-
+        <script src="main.js"></script>
+        
     </body>
 
 </html>
